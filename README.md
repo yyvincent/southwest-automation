@@ -9,15 +9,20 @@ Requirement to build and run the tests:
 
 Clone and Download the repository.
 1. Do a maven clean install
-2. On your Java IDE, run the class JunitTest
+2. On your Java IDE, run the tests in  JunitTest.java, it's a suite of all the tests.
 
-Test cases documentation:
+
+Test cases documentation: All tests are in the test package.
 
 HomePageTest: This is the home page test.
+These are the tests performed for this page:
+
 1. Assert and verify that the browser is on the correct URL
 2. Make sure the “Flights” tab is selected by default.
 
 FlightPageTest: This is the flight search page test.
+These are the tests performed for this page:
+
 1. In the Depart Airport field, type in an airport code such as SFO, wait for the airport drop down list displayed, select SFO, make sure SFO is the final depart airport.
 2. In the Arrive Airport field, type in an airport code such as SFO, wait for the airport drop down list displayed, select SFO, make sure SFO is the arrive airport.
 3. Test different airport codes for the depart airport and the arrive airport from the airport drop down list.
@@ -25,10 +30,14 @@ FlightPageTest: This is the flight search page test.
 5. Test different airport codes for the depart airport and the arrive airport from the airport drop down list, use proper departure date and arrive date, the selection is valid, no error message is displayed.
 
 FlightSearchResultsPageTest: This is the flight search result page test.
+These are the tests performed for this page:
+
 1. On the flight search result page, all the information such as departure airport, return airport, departure date, return date is based on the input from the Flight Search Page.
 2. Test if nonstop is selected for both departure and returned flights in the flight search page, only nonstop flights will be displayed in the search result page.
 
 TripandPriceDetailsPageTest: This is the flight reservation summary detail page test.
+These are the tests performed for this page:
+
 1. Based on the selected flight numbers for departing and return flights, the duration and the price for each are verified and compared with the selection from the flight search result page. The total price is equal to the sum of the departing flight and and the return flight,
 
 
